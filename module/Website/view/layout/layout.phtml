@@ -1,0 +1,22 @@
+<?php echo $this->doctype(); ?>
+<html>
+    <head>
+        <?php echo $this->headMeta()->appendName('viewport','with=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0'); ?>
+        <?php echo $this->headLink()->appendStylesheet('/css/bootstrap.css','screen'); ?>
+        <?php echo $this->headLink()->appendStylesheet('/css/bootstrap-responsive.css','screen'); ?>
+        <?php echo $this->headLink()->appendStylesheet('/css/mycss.css','screen'); ?>
+    </head>
+    <body>
+        <header>
+            .......
+        </header>
+        <div class="hidden-phone" style="border-bottom: solid 2px #df8505; background-color: #000; color:#fff;">aqui va ir mi menu</div>
+        <div class="container">
+            <?php echo $this->content; ?>      
+        </div>
+        <footer>
+            CopyRight 2013 by Beatriz Perez
+        </footer>
+
+    </body>
+</html>

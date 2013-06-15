@@ -1,0 +1,60 @@
+<div class="fluid-row">
+    <?php echo $this->services; ?>
+    </br>
+    </br>
+    <?php echo 'En total son '.count($this->services).' elementos'; ?>
+    <br/>
+    <br/>
+    <?php 
+    echo $this->services[0].'<br/>';
+    echo $this->services[1].'<br/>';
+    echo $this->services[2].'<br/>';
+    echo $this->services[3].'<br/>';
+    echo $this->services[4].'<br/>';
+    echo $this->services[5].'<br/>';
+    echo $this->services[6].'<br/>';
+    ?>
+    </br>
+    <?php echo $this->programer; ?>
+    <?php
+    
+    for($x=0;$x<count($this->services);$x++){
+        echo $this->services[$x].'<br/>';        
+    }
+    ?>
+    <br/>
+    <br/>
+    <?php
+    $x=0;
+    while($x<count($this->services)){
+        echo $this->services[$x].'<br/>';
+        $x++;
+    }
+     ?> 
+    <br/>
+    <br/>
+    <?php
+    $x=0;
+    do{
+        echo $this->services[$x].'<br/>';
+    $x++;
+       
+    }while($x<count($this->services));
+        
+    ?>
+    <br/>
+    <br/>
+    <?php
+    
+    foreach ($this->services as $element){
+        echo $element.'<br/>';
+    }
+    ?>
+    <br/>
+    <br/>
+    <?php 
+    foreach ($this->hosting as $element=>$x){
+        echo $element.$x['space'],'<br/>';
+    }
+    ?>
+</div>
